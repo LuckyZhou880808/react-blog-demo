@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <!-- Used for search engine crawlers to navigate the react app -->
+        <!-- <meta name="fragment" content="!"> -->
+        <title><%= htmlWebpackPlugin.options.title %></title>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+        <!-- CSS -->
+        <% for (var css in htmlWebpackPlugin.files.css) { %>
+        <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.css[css] %>">
+        <% } %>
+    </head>
+
+    <body>
+        <!-- Div that the React application will look up and inject itself into -->
+        <div id="rootApp"></div>
+
+        <!-- JS -->
+        <% for (var chunk in htmlWebpackPlugin.files.chunks) { %>
+        <script src="<%= htmlWebpackPlugin.files.chunks[chunk].entry %>"></script>
+        <% } %>
+    </body>
+
+</html>
+
