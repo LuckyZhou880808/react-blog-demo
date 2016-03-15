@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "http-server": "^0.9.0",
+    "isomorphic-fetch": "^2.2.1",
     "jquery": "^2.2.0",
     "lodash": "^3.10.1",
     "react": "^0.14.5",
