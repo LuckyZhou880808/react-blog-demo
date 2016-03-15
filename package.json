@@ -5,8 +5,8 @@
   "main": "app/js/index.js",
   "scripts": {
     "install-linters": "npm install -g eslint || sudo npm install -g eslint",
-    "debug": "npm install && node webpack.dev.server.js",
-    "build": "npm run lint && node ./node_modules/webpack/bin/webpack.js --config webpack.config.js",
+    "debug": "node webpack.dev.server.js",
+    "build": "node ./node_modules/webpack/bin/webpack.js --config webpack.config.js",
     "lint": "eslint -c .eslintrc app/js app/test",
     "start": "http-server -p 5000 -o",
     "test": "mocha --compilers js:babel-core/register ./app/test/*/*.js"
