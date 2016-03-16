@@ -9,7 +9,7 @@ A framework for quickly setup enterprise SPA.
 3. Go to `http://localhost:3000` and you should see the app running!
 4. Run `npm run lint` to check code style issues.
 5. Run `npm run build` will pack all resource into specified folder 
-6. Run `npm run start` will run buid task and run it on node http server.
+6. Run `npm start` will run buid task and run it on node http server.
 7. Go to `http://localhost:9000` and you should see the final app running on production
 
 ## Fetures
