@@ -1,3 +1,5 @@
+@import 'app/css/variables.sass';
+
 .loginContainer
     display: flex
     justify-content: center
@@ -5,7 +7,16 @@
     height: 600px
 
 .loginDv
+    padding: 15px
     align-self: center
-    height: 300px
-    width: 300px
-    background-color: #eee
+    height: 150px
+    width: 250px
+    background-color: $color_secondary_section
+    border-radius: 8px
+    box-shadow: 0 0 15px #ccc
+    text-align: center
+
+    p
+        display: flex
+        justify-content: space-between
+        margin: 15px auto

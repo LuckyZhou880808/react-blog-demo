@@ -31,6 +31,7 @@ export default class IndexPage extends React.Component {
         return (
             <div className={styles.indexContainer}>
                 <div className={styles.nav}>
+                    <h2>Blog Demo</h2>
                     {
                         !loggedIn() ?
                         <Link to='/login'>Login</Link> :
@@ -38,7 +39,7 @@ export default class IndexPage extends React.Component {
                     }
                 </div>
                 <div className={styles.body}>
-                    IndexPage!
+                    This is the index page! everythings can be started here!
                 </div>
             </div>
         );

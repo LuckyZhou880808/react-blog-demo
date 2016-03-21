@@ -16,14 +16,9 @@ import styles from './loginPage.sass';
     }
 )
 export default class LoginPage extends React.Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.handleSubmit = this.handleSubmit.bind(this);
-    }
-
-    static propTypes = {
-        appReducer: PropTypes.object,
-        dispatch: PropTypes.func
     }
 
     static contextTypes = {
@@ -41,10 +36,10 @@ export default class LoginPage extends React.Component {
         return (
             <div className={styles.loginContainer}>
                 <div className={styles.loginDv}>
-                    <h2>Login Page</h2>
                     <form onSubmit={this.handleSubmit}>
-                        <p>UserName: <input ref='loginName' type='text' /> (hint: admin)</p>
-                        <p>Password: <input ref='loginPassword' type='password' /> (hint: admin)</p>
+                        <h2>Login Page</h2>
+                        <p>UserName: <input ref='loginName' type='text' /></p>
+                        <p>Password: <input ref='loginPassword' type='password' /></p>
                         <input type='submit' value='submit' />
                     </form>
                 </div>
@@ -52,3 +47,8 @@ export default class LoginPage extends React.Component {
         );
     }
 }
+
+LoginPage.propTypes = {
+    appReducer: PropTypes.object,
+    dispatch: PropTypes.func
+};

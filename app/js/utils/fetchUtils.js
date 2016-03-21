@@ -10,7 +10,7 @@ function doRequest(options = {}) {
         }
     });
 
-    return fetch(mergedOptions.url, mergedOptions.options)
+    return fetch(mergedOptions.url, mergedOptions)
         .then((response) => {
             if (response.status !== 200) {
                 const error = new Error(response.statusText);
@@ -42,15 +42,15 @@ export function doGet(options = {}) {
 
 export function doPut(options = {}) {
     const mergedOptions = assignToEmpty(options, { method: 'put' });
-    return doRequest(options);
+    return doRequest(mergedOptions);
 }
 
 export function doPost(options = {}) {
     const mergedOptions = assignToEmpty(options, { method: 'post' });
-    return doRequest(options);
+    return doRequest(mergedOptions);
 }
 
 export function doDelete(options = {}) {
     const mergedOptions = assignToEmpty(options, { method: 'delete' });
-    return doRequest(options);
+    return doRequest(mergedOptions);
 }

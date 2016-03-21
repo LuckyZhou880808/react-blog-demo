@@ -6,6 +6,7 @@ import { combineReducers } from 'redux';
 
 import { routerReducer } from 'react-router-redux';
 import appReducer from './appReducer';
+import blogReducer from './blogReducer';
 
-const rootReducer = combineReducers({ appReducer, routing: routerReducer });
+const rootReducer = combineReducers({ appReducer, blogReducer, routing: routerReducer });
 export default rootReducer;

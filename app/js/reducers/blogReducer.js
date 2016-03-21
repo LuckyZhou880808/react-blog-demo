@@ -11,21 +11,18 @@
 */
 
 import assignToEmpty from '../utils/assign';
-import { DO_LOGIN, DO_LOGOUT } from '../constants/AppConstants';
+import { DO_CREATE_BLOG } from '../constants/BlogConstants';
 
 const initialState = {
-    appName: 'Blog Demo'
+    blogList: [],
+    currentBlog: {}
 };
 
 function appReducer(state = initialState, action) {
     switch (action.type) {
-        case `${DO_LOGIN}_SUCCESS`:
+        case `${DO_CREATE_BLOG}_SUCCESS`:
             return assignToEmpty(state, {
                 loggedIn: true
-            });
-        case `${DO_LOGOUT}_SUCCESS`:
-            return assignToEmpty(state, {
-                loggedIn: false
             });
         default:
             return state;

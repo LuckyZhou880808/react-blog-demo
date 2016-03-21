@@ -23,10 +23,6 @@ export default class App extends React.Component {
     constructor(props, context) {
         super(props, context);
     }
-    
-    static propTypes = {
-        children: PropTypes.node
-    }
 
     componentDidMount() {
         // Verify user whether login
@@ -44,3 +40,7 @@ export default class App extends React.Component {
         );
     }
 }
+
+App.propTypes = {
+    children: PropTypes.node
+};

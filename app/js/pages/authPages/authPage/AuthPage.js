@@ -10,9 +10,7 @@ import styles from './authPage.sass';
  */
 @connect()
 export default class AuthPage extends React.Component {
-    static propTypes = {
-        children: PropTypes.node
-    }
+
 
     render() {
         const { children } = this.props;
@@ -27,3 +25,7 @@ export default class AuthPage extends React.Component {
         );
     }
 }
+
+AuthPage.propTypes = {
+    children: PropTypes.node
+};

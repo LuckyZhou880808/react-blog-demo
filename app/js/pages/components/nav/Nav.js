@@ -43,9 +43,14 @@ export default class Nav extends React.Component {
         return (
             <nav className={styles.navContainer}>
                 <h1>{ appReducer.appName }</h1>
+                <ul className={styles.middleNav}>
+                    <li><Link to='/home'>Home</Link></li>
+                    <li><Link to='/list'>List</Link></li>
+                    <li><Link to='/create'>Create</Link></li>
+                    <li><Link to='/settings'>Settings</Link></li>
+                </ul>
                 <ul>
                     <li><a href='#' onClick={this._logout}>Logout</a></li>
-                    <li><Link to='/home'>Home</Link></li>
                 </ul>
             </nav>
         );

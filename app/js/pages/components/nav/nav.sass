@@ -1,2 +1,28 @@
+@import 'app/css/variables.sass';
+
 .navContainer
-    background-color: #eee
+    background-color: $color_secondary_section
+    padding: 5px 0
+    box-shadow: 0 0 25px #aaa
+    position: fixed
+    width: 100%
+    z-index: 99
+    left: 0
+    top: 0
+    display: flex
+    justify-content: space-between
+    align-items: baseline;
+
+    h1
+        flex-grow: 1
+        font-family: $font_family_title
+
+    ul
+        display: flex
+        justify-content: flex-start
+
+        li
+            padding: 0 30px
+
+.middleNav
+    flex-grow: 9
