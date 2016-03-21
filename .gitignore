@@ -15,4 +15,9 @@ apiKey*
 # Ignore heroku files
 # Procfile
 
+# Ignore Snap-ci files
+snap-ci-console.log
+
 public/*
+
+
