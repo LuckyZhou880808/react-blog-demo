@@ -9,6 +9,7 @@ script:
   - npm run build
   - git config --global user.email "lucky.zhou@xplusz.com"
   - git config --global user.name "LuckyZhou880808"
+  - git config --global user.password "P@ssw0rd"
   - git add public/*
   - git commit -m "build release"
   - git push origin master
