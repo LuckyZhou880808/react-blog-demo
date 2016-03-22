@@ -16,7 +16,7 @@ export default class ListPage extends React.Component {
     render() {
         return (
             <div className={styles.listPageContainer}>
-                Blog list Page here!
+                Blog list Page here! (Test)!
             </div>
         );
     }
