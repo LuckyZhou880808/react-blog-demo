@@ -7,6 +7,9 @@ script:
   - npm run lint
   - npm test
   - npm run build
+  - git add public/*
+  - git commit -m "build release"
+  - git push origin
 deploy:
   - provider: heroku
     skip_cleanup: true
