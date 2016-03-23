@@ -55,5 +55,6 @@ export default class ListPage extends React.Component {
 }
 
 ListPage.propTypes = {
-    dispatch: PropTypes.func
+    dispatch: PropTypes.func,
+    blogReducer: PropTypes.object
 };

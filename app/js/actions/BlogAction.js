@@ -19,10 +19,10 @@ export function getBlogList() {
     return (dispatch) => {
         doGet({ url: listBlog })
             .then((data) => {
-                dispatch({ type: 'GET_BLOG_LIST_SUCCESS', data });
+                dispatch({ type: `${GET_BLOG_LIST}_SUCCESS`, data });
             })
             .catch((err) => {
-                dispatch({ type: 'GET_BLOG_LIST_FAILURE', data: err });
+                dispatch({ type: `${GET_BLOG_LIST}_FAILURE`, data: err });
             });
-    }
+    };
 }

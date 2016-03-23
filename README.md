@@ -1,4 +1,5 @@
 # react-redux-enterprise-spa-starter
+[![Build Status](https://travis-ci.org/LuckyZhou880808/react-blog-demo.svg?branch=master)](https://travis-ci.org/LuckyZhou880808/react-blog-demo)
 A framework for quickly setup enterprise SPA.
 
 ----
