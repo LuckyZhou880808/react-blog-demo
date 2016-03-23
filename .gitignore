@@ -17,3 +17,5 @@ apiKey*
 
 # Ignore Snap-ci files
 snap-ci-console.log
+
+public/*

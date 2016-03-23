@@ -9,7 +9,7 @@ script:
   - npm run build
   - git config --global user.email "lucky.zhou@xplusz.com"
   - git config --global user.name "LuckyZhou880808"
-  - git add public/*
+  - git -f add public/*
   - git commit -m "build release"
 deploy:
   - provider: heroku
