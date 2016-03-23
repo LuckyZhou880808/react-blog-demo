@@ -1,8 +1,8 @@
 import React, { PropTypes } from 'react';
 import { Link } from 'react-router';
 import { connect } from 'react-redux';
-import { loggedIn } from '../../utils/auth';
-import { doLogout } from '../../actions/AppAction';
+import { loggedIn } from 'js/utils/auth';
+import { doLogout } from 'js/actions/AppAction';
 import styles from './indexPage.sass';
 
 @connect()

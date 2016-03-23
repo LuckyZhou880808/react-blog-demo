@@ -10,8 +10,8 @@
  * Add reducer to rootReducer
 */
 
-import assignToEmpty from '../utils/assign';
-import { DO_CREATE_BLOG } from '../constants/BlogConstants';
+import assignToEmpty from 'js/utils/assign';
+import { DO_CREATE_BLOG, GET_BLOG_LIST } from 'js/constants/BlogConstants';
 
 const initialState = {
     blogList: [],
@@ -23,6 +23,10 @@ function appReducer(state = initialState, action) {
         case `${DO_CREATE_BLOG}_SUCCESS`:
             return assignToEmpty(state, {
                 loggedIn: true
+            });
+        case `${GET_BLOG_LIST}_SUCCESS`:
+            return assignToEmpty(state, {
+                blogList: action.data
             });
         default:
             return state;

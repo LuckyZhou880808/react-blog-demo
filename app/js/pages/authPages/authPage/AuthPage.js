@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-import { Nav } from '../../components';
+import { Nav } from 'js/pages/components';
 import { connect } from 'react-redux';
 import styles from './authPage.sass';
 

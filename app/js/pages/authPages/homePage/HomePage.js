@@ -13,7 +13,7 @@ export default class HomePage extends React.Component {
     render() {
         return (
             <div className={styles.homeContainer}>
-                Home Page!
+                Home Page! (Updated 1)!
             </div>
         );
     }

@@ -6,7 +6,7 @@ import { syncHistoryWithStore } from 'react-router-redux';
 import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import rootReducer from './reducers/rootReducer';
-import { routes } from './configs';
+import routes from './configs/routes';
 
 const middlewares = [thunk];
 const store = applyMiddleware(...middlewares)(createStore)(rootReducer);

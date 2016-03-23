@@ -2,8 +2,8 @@
 
 import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
-import { loggedIn } from '../../utils/auth';
-import globalStyles from '../../../css/main.sass';
+import { loggedIn } from 'js/utils/auth';
+import globalStyles from 'css/main.sass';
 import styles from './app.sass';
 
 /**

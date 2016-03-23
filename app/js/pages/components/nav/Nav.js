@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router';
-import { doLogout } from '../../../actions/AppAction';
+import { doLogout } from 'js/actions/AppAction';
 import styles from './nav.sass';
 
 /**

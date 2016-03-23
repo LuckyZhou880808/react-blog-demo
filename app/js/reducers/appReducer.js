@@ -10,8 +10,8 @@
  * Add reducer to rootReducer
 */
 
-import assignToEmpty from '../utils/assign';
-import { DO_LOGIN, DO_LOGOUT } from '../constants/AppConstants';
+import assignToEmpty from 'js/utils/assign';
+import { DO_LOGIN, DO_LOGOUT } from 'js/constants/AppConstants';
 
 const initialState = {
     appName: 'Blog Demo'

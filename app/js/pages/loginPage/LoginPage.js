@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
-import { doLogin } from '../../actions/AppAction';
+import { doLogin } from 'js/actions/AppAction';
 import styles from './loginPage.sass';
 
 /**

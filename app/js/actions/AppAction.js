@@ -1,4 +1,4 @@
-import { DO_LOGIN, DO_LOGOUT } from '../constants/AppConstants';
+import { DO_LOGIN, DO_LOGOUT } from 'js/constants/AppConstants';
 
 export function doLogin(loginName, loginPassword, router) {
     if (loginName === 'admin' && loginPassword === 'admin') {

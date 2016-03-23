@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
 import styles from './createPage.sass';
-import { doCreateBlog } from '../../../actions/BlogAction';
+import { doCreateBlog } from 'js/actions/BlogAction';
 
 /**
  * Home Page.
