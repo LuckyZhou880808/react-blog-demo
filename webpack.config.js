@@ -90,5 +90,9 @@ module.exports = {
                 loader: 'url-loader?limit=10000'
             }
         ]
-    }
+    },
+
+    postcss: [
+            autoprefixer({browsers: ['last 2 versions']})
+    ]
 };
