@@ -20,7 +20,7 @@ if (process.env.NODE_ENV === 'production') {
     // const otherBasePath = 'http://127.0.0.1:8080';
 }
 
-export const resources = {
+export {
     authSecBasePath,
     blogResources
 };
