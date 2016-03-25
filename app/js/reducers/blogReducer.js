@@ -11,7 +11,7 @@
 */
 
 import assignToEmpty from 'js/utils/assign';
-import { DO_CREATE_BLOG, GET_BLOG_LIST } from 'js/constants/BlogConstants';
+import { DO_CREATE_BLOG, GET_BLOG_LIST, GET_BLOG } from 'js/constants/BlogConstants';
 
 const initialState = {
     blogList: [],
@@ -27,6 +27,10 @@ function appReducer(state = initialState, action) {
         case `${GET_BLOG_LIST}_SUCCESS`:
             return assignToEmpty(state, {
                 blogList: action.data
+            });
+        case `${GET_BLOG}_SUCCESS`:
+            return assignToEmpty(state, {
+                currentBlog: action.data
             });
         default:
             return state;

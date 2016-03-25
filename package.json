@@ -30,6 +30,7 @@
     "react-dom": "^0.14.2",
     "react-redux": "^4.0.0",
     "react-router": "^2.0.0",
+    "react-router-redux": "^4.0.0",
     "redux": "^3.0.5",
     "redux-thunk": "^1.0.3"
   },
@@ -60,7 +61,6 @@
     "object.assign": "^4.0.3",
     "postcss-loader": "^0.8.1",
     "react-hot-loader": "^2.0.0-alpha-2",
-    "react-router-redux": "^4.0.0",
     "resolve-url-loader": "^1.4.3",
     "sass-loader": "^2.0.1",
     "style-loader": "^0.13.0",
