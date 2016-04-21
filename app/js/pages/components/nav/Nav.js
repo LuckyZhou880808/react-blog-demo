@@ -50,7 +50,6 @@ export default class Nav extends React.Component {
                     <li><Link to='/settings'>Settings</Link></li>
                 </ul>
                 <ul>
-                    <li><a href="http://webscan.360.cn/index/checkwebsite/url/react-blog-demo.herokuapp.com"><img border="0" src="http://img.webscan.360.cn/status/pai/hash/ce19bee93eea1a853a8f0f4023b13de0"/></a></li>
                     <li><a href='#' onClick={this._logout}>Logout</a></li>
                 </ul>
             </nav>
