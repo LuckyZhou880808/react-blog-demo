@@ -21,6 +21,7 @@ const initialState = {
 function appReducer(state = initialState, action) {
     switch (action.type) {
         case `${DO_CREATE_BLOG}_SUCCESS`:
+            console.log(state);
             return assignToEmpty(state, {
                 loggedIn: true
             });

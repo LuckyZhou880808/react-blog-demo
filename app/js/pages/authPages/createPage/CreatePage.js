@@ -20,9 +20,12 @@ export default class CreatePage extends React.Component {
     }
 
     handleSubmit(e) {
+        const { dispatch } = this.props;
+
         e.preventDefault();
         const { title, content } = this.refs;
-        doCreateBlog({ title: title.value, content: content.value }, this.context.router);
+        // doCreateBlog({ title: title.value, content: content.value }, this.context.router);
+        dispatch(doCreateBlog({ title: title.value, content: content.value }));
     }
 
     render() {

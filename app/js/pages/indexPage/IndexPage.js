@@ -42,7 +42,6 @@ export default class IndexPage extends React.Component {
                     This is the index page! everythings can be started here!
                 </div>
                 <footer className={styles.footer}>
-                    <a href='http://webscan.360.cn/index/checkwebsite/url/react-blog-demo.herokuapp.com'><img border='0' src='http://img.webscan.360.cn/status/pai/hash/ce19bee93eea1a853a8f0f4023b13de0' /></a>
                 </footer>
             </div>
         );
