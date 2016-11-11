@@ -5,6 +5,7 @@ import { Router, browserHistory } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
 import { createStore, applyMiddleware } from 'redux';
 import restMiddlewareCreator from 'redux-fetch-middleware';
+// import createLogger from 'redux-logger';
 import thunk from 'redux-thunk';
 import rootReducer from './reducers/rootReducer';
 import routes from './configs/routes';
@@ -21,6 +22,7 @@ const globalRestOptions = {
     }
 };
 
+// const logger = createLogger();
 const restMiddleware = restMiddlewareCreator(globalRestOptions);
 const middlewares = [thunk, restMiddleware];
 const store = applyMiddleware(...middlewares)(createStore)(rootReducer);
